@@ -31,7 +31,7 @@ const getImg = function () {
 // FETCHING
 const key = 'fc75738f';
 const api = function (title) {
-	fetch(`http://www.omdbapi.com/?t=${title}&apikey=fc75738f`)
+	fetch(`https://www.omdbapi.com/?t=${title}&apikey=fc75738f`)
 		.then(function (response) {
 			return response.json();
 		})
@@ -53,7 +53,7 @@ const api = function (title) {
 };
 
 const search = function (input) {
-	fetch(`http://www.omdbapi.com/?s=${input}&apikey=fc75738f`)
+	fetch(`https://www.omdbapi.com/?s=${input}&apikey=fc75738f`)
 		.then((res) => {
 			return res.json();
 		})
@@ -84,7 +84,7 @@ sliderimg6.addEventListener('click', getImg);
 // SEARCH STATES.json and filter it
 
 const searchStates = function (title) {
-	fetch(`http://www.omdbapi.com/?s=${title}&apikey=fc75738f`)
+	fetch(`https://www.omdbapi.com/?s=${title}&apikey=fc75738f`)
 		.then((res) => {
 			return res.json();
 		})
