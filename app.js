@@ -111,3 +111,15 @@ const searchStates = function (title) {
 		});
 };
 searchInput.addEventListener('input', () => searchStates(searchInput.value));
+
+const watchTrailer = function () {
+	fetch(
+		`https://api.themoviedb.org/3/movie/550?api_key=2e32f4bcb384192eb49d2c953c602420`
+	)
+		.then((res) => res.json())
+		.then((data) => {
+			console.log(data);
+		});
+};
+
+watchTrailer();
